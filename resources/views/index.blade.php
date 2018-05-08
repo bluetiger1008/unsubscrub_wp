@@ -1,5 +1,6 @@
 @extends('layouts.app')
 
+@section('content')
 <div class="landing-page">
   <main class="Layout_main">
 
@@ -18,7 +19,7 @@
         emails with one click.
       </p>
 
-      <a class="FancyButton" href="demo.html">
+      <a class="FancyButton" href="demo.html" data-toggle="modal" data-target="#myModal">
         Get started now
       </a>
     </section>
@@ -64,3 +65,23 @@
     </section>
   </main>
 </div>
+
+<div class="modal" id="myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Terms of service</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Pellentesque rhoncus at mauris a semper. Aliquam erat volutpat. Curabitur pulvinar, mi id consectetur consequat, ipsum diam placerat ipsum, in facilisis dui elit suscipit ante. Quisque vitae diam hendrerit, dapibus lorem ut, vulputate nunc. Nullam dapibus odio ac aliquam vehicula. In vel auctor libero. Morbi nec malesuada diam. Suspendisse eu dui eget libero convallis facilisis at at nisi. Pellentesque consectetur cursus facilisis. Integer nisl sem, viverra in odio at, rhoncus tristique metus. Donec mollis felis dictum auctor euismod. Aliquam erat volutpat. Quisque mattis consectetur lorem. Suspendisse venenatis sapien ac est scelerisque lacinia. Phasellus et neque bibendum, ullamcorper felis sed, tincidunt nisi. Etiam non vestibulum sem, at egestas tellus.</p>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <a class="btn button-primary-bg continue" href="http://go.unsubscrub.com/site/start">Continue</a>
+      </div>
+    </div>
+  </div>
+</div>
+@endsection
