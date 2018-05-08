@@ -1,0 +1,13 @@
+.Lead {
+  font-weight: $font-weight-light;
+  margin: $size2 0;
+  line-height: 1.4;
+
+  @media (min-width: $site-max-width) {
+    font-size: $font-size-large;
+  }
+
+  @media (max-width: $site-max-width) {
+    font-size: $font-size-normal;
+  }
+}

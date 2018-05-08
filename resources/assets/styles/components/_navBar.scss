@@ -1,0 +1,19 @@
+.NavBar {
+  display: flex;
+  justify-content: space-evenly;
+
+  // Children
+  &_item {
+    text-transform: uppercase;
+    color: $color-subtle;
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+    padding: $size2 0;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+
+    &.-active {
+      color: $color-text;
+    }
+  }
+}

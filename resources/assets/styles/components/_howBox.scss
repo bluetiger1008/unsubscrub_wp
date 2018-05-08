@@ -1,0 +1,27 @@
+.HowBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: $size4 auto;
+  font-size: $font-size-large;
+  max-width: $site-max-width / 1.5;
+
+  &_body {
+    padding: 0 0 0 $size3;
+    text-align: left;
+  }
+
+  @media (min-width: $site-max-width) {
+    margin: ($size3 * 2) auto;
+  }
+
+  // Mods
+  &.-reverse {
+    flex-direction: row-reverse;
+  }
+
+  &.-reverse &_body {
+    padding: 0 $size3 0 0;
+    text-align: right;
+  }
+}

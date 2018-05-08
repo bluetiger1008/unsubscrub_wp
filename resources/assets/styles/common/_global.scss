@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+
+//@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css';
+//@import 'https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css';
+
+html {
+  box-sizing: border-box;
+
+  @media (min-width: $site-max-width) {
+    font-size: $font-size-base-lg;
+  }
+
+  @media (max-width: $site-max-width) {
+    font-size: $font-size-base-sm;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font: $font-weight-light 1rem "Roboto", sans-serif;
+  background: $color-background;
+  color: $color-text;
+  margin: 0;
+}
+
+a {
+  color: $color-text;
+
+  &:hover {
+    color: $color-text;
+    text-decoration: underline;
+  }
+}

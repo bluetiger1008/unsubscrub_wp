@@ -1,0 +1,23 @@
+.SkewBox {
+  position: relative;
+  padding: $size2;
+  margin: ($size4 * 2) 0;
+
+  &::before {
+    background: $color-content;
+    border: solid 1px $color-border;
+    box-shadow: 0 0 8px 0 rgba(229, 229, 229, 0.5);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: skewY(5deg);
+  }
+
+  > * {
+    position: relative;
+  }
+}

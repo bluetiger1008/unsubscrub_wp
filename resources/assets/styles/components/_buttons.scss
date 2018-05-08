@@ -1,0 +1,21 @@
+.Button {
+  background: transparent;
+  border: none;
+  color: $color-text;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
+  padding: 0;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+
+  // Mods
+  &.-positive {
+    color: $color-positive;
+  }
+
+  &.-negative {
+    color: $color-negative;
+  }
+}

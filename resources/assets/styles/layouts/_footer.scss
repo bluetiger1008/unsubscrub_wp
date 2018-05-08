@@ -1,0 +1,57 @@
+.Footer {
+  background: $color-content;
+  box-shadow: 0 0 8px 0 rgba(229, 229, 229, 0.5);
+  font-size: $font-size-normal;
+  color: $color-text;
+  padding: $size2;
+
+  &_inner {
+    margin: 0 auto;
+    max-width: $site-max-width;
+  }
+
+  .widget_nav_menu {
+    h3 {
+      display: none;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+      padding: 0;
+      font-weight: $font-weight-medium;
+    }
+  }
+
+  &_copy {
+    font-size: $font-size-small;
+    color: $color-subtle;
+    text-align: center;
+    margin: $size3 0;
+  }
+
+  &_sites {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      columns: 3;
+
+      @media (max-width: $site-max-width) {
+        columns: 2;
+      }
+    }
+
+    strong {
+      display: block;
+      margin-bottom: $size1;
+    }
+
+    a {
+      display: block;
+      font-size: $font-size-small;
+      line-height: 2;
+    }
+  }
+}

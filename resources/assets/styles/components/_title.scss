@@ -1,0 +1,20 @@
+.Title {
+  color: $color-text;
+  font-size: $font-size-xlarge;
+  font-weight: $font-weight-bold;
+  margin: $size2 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+a.Title {
+  color: $color-subtle;
+  font-weight: $font-weight-medium;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-text;
+    text-decoration: underline;
+  }
+}

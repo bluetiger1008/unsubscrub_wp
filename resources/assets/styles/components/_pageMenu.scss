@@ -1,0 +1,7 @@
+.PageMenu {
+  display: flex;
+
+  > .Title {
+    margin: $size1 $size2 $size1 0 !important;
+  }
+}

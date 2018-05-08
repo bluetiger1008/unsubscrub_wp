@@ -1,7 +1,19 @@
-.banner .nav li {
-  @extend .nav-item;
-}
+.Header {
+  background: $color-content;
+  font-size: $font-size-normal;
 
-.banner .nav a {
-  @extend .nav-link;
+  // Children
+  &_top {
+    border-bottom: 1px solid $color-border;
+  }
+
+  &_nav {
+    border-bottom: 1px solid $color-border;
+  }
+
+  &_inner {
+    max-width: $site-max-width;
+    margin: 0 auto;
+    padding: 0 $size2;
+  }
 }

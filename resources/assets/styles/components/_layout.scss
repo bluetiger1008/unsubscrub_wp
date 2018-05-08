@@ -1,0 +1,13 @@
+.Layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  &_main {
+    flex: 1;
+  }
+
+  &_footer {
+    margin-top: $size4;
+  }
+}
