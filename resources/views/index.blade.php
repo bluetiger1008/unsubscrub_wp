@@ -1,68 +1,67 @@
 @extends('layouts.app')
 
 @section('content')
-    <section class="Section -center">
-      <img class="Logo -large" src="@asset('images/logo.svg')">
-    </section>
+  <section class="Section -center">
+    <img class="Logo -large" src="@asset('images/logo.svg')">
+  </section>
 
-    <section class="Section -center">
-      <h1 class="Title">
-        Clean up your inbox
-      </h1>
+  <section class="Section -center">
+    <h1 class="Title">
+      Clean up your inbox
+    </h1>
 
-      <p class="Lead">
-        Tired of spam and newsletters?<br/>
-        Easily unsubscribe from subscription<br/>
-        emails with one click.
-      </p>
+    <p class="Lead">
+      Tired of spam and newsletters?<br/>
+      Easily unsubscribe from subscription<br/>
+      emails with one click.
+    </p>
 
-      <a class="FancyButton" href="demo.html" data-toggle="modal" data-target="#myModal">
-        Get started now
-      </a>
-    </section>
+    <a class="FancyButton" id="get_started_1">
+      Get started now
+    </a>
+  </section>
 
-    <div class="SkewBox">
-      <section class="Section">
+  <div class="SkewBox">
+    <section class="Section">
 
-        <div class="HowBox -reverse">
-          <img alt="Email service logos"
-            src="@asset('images/illustration-services.png')"
-            srcSet="@asset('images/illustration-services@2x.png 2x'), @asset('images/illustration-services@3x.png 3x')">
+      <div class="HowBox -reverse">
+        <img alt="Email service logos"
+          src="@asset('images/illustration-services.png')"
+          srcSet="@asset('images/illustration-services@2x.png 2x'), @asset('images/illustration-services@3x.png 3x')">
 
-          <div class="HowBox_body">
-            Sign in securely with your Google email account
-          </div>
+        <div class="HowBox_body">
+          Sign in securely with your Google email account
         </div>
+      </div>
 
-        <div class="HowBox">
-          <img alt="List of subscriptions" 
-            src="@asset('images/illustration-list.svg')">
+      <div class="HowBox">
+        <img alt="List of subscriptions" 
+          src="@asset('images/illustration-list.svg')">
 
-          <div class="HowBox_body">
-            Instantly get a list of your newsletter subscriptions
-          </div>
+        <div class="HowBox_body">
+          Instantly get a list of your newsletter subscriptions
         </div>
+      </div>
 
-        <div class="HowBox -reverse">
-          <img alt="Finger pushes button" 
-            src="@asset('images/illustration-click.svg')">
+      <div class="HowBox -reverse">
+        <img alt="Finger pushes button" 
+          src="@asset('images/illustration-click.svg')">
 
-          <div class="HowBox_body">
-            Unsubscribe one by one, or all of them, at the tap of a button
-          </div>
+        <div class="HowBox_body">
+          Unsubscribe one by one, or all of them, at the tap of a button
         </div>
+      </div>
 
-      </section>
-    </div>
-
-    <section class="Section -center">
-      <h1 class="Title">It's free, safe, and easy</h1>
-      <p><a class="FancyButton" href="demo.html">Get started now</a></p>
-      <p><a href="#">Learn about our business model</a></p>
     </section>
+  </div>
 
-
-  <div class="modal" id="myModal" tabindex="-1" role="dialog">
+  <section class="Section -center">
+    <h1 class="Title">It's free, safe, and easy</h1>
+    <p><a class="FancyButton" id="get_started_2">Get started now</a></p>
+    <p><a href="#">Learn about our business model</a></p>
+  </section>
+  
+  <div class="modal" id="myModal">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -74,8 +73,12 @@
         <div class="modal-body">
           <p>Pellentesque rhoncus at mauris a semper. Aliquam erat volutpat. Curabitur pulvinar, mi id consectetur consequat, ipsum diam placerat ipsum, in facilisis dui elit suscipit ante. Quisque vitae diam hendrerit, dapibus lorem ut, vulputate nunc. Nullam dapibus odio ac aliquam vehicula. In vel auctor libero. Morbi nec malesuada diam. Suspendisse eu dui eget libero convallis facilisis at at nisi. Pellentesque consectetur cursus facilisis. Integer nisl sem, viverra in odio at, rhoncus tristique metus. Donec mollis felis dictum auctor euismod. Aliquam erat volutpat. Quisque mattis consectetur lorem. Suspendisse venenatis sapien ac est scelerisque lacinia. Phasellus et neque bibendum, ullamcorper felis sed, tincidunt nisi. Etiam non vestibulum sem, at egestas tellus.</p>
         </div>
-        <div class="modal-footer justify-content-center">
-          <a class="btn button-primary-bg continue" href="http://go.unsubscrub.com/site/start">Continue</a>
+        <div class="modal-footer">
+          <p>
+            <input type="checkbox" id="check_accept">
+            <label id="checkbox_label">Yes, I accept</label>
+          </p>
+          <a class="btn button-primary-bg continue" id="btn_continue" href="http://go.unsubscrub.com/site/start">Continue</a>
         </div>
       </div>
     </div>
