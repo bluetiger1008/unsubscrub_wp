@@ -1,6 +1,3 @@
-// import external dependencies
-import 'jquery';
-
 // Import everything from autoload
 import "./autoload/**/*"
 
@@ -20,5 +17,15 @@ const routes = new Router({
   aboutUs,
 });
 
-// Load Events
-jQuery(document).ready(() => routes.loadEvents());
+var callback = function(){
+  routes.loadEvents()
+};
+
+if (
+    document.readyState === "complete" ||
+    (document.readyState !== "loading" && !document.documentElement.doScroll)
+) {
+  callback();
+} else {
+  document.addEventListener("DOMContentLoaded", callback);
+}
