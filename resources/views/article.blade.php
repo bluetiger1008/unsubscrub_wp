@@ -11,7 +11,11 @@
   </div>
   
   <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-  <section class="article-image" style="background: url('<?php echo $backgroundImg[0]; ?>')">
+  @if ($backgroundImg[0])
+    <section class="article-image" style="background-image: url('{{ $backgroundImg[0] }}')">
+  @else
+    <section class="article-image" style="background-image: url('@asset('images/bg-placeholder.png')')">    
+  @endif
   </section>
   
   <section class="Section article-content">

@@ -24,8 +24,10 @@
   section {
     &.article-image {
       height: 211px;
-      background: $color-concrete;
+      background: url('images/bg-placeholder.png');
+      background-size: 100% auto;
       background-repeat: no-repeat;
+      background-position: center;
     }
 
     &.article-content {
