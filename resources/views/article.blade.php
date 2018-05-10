@@ -6,7 +6,7 @@
 
 @section('content')
   <div class="header">
-    <img class="logo" src="@asset('images/logo.svg')">
+    <a href="{{ home_url('/') }}"><img class="logo" src="@asset('images/logo.svg')"></a>
     <button class="btn button-primary-bg">Get Started</button>
   </div>
   
