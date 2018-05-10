@@ -19,52 +19,77 @@
   border: 1px solid #d3d3d3;
   width: 450px;
   border-radius: 4px;
-  padding: 0.2em;
 
   .modal-header {
-    border-bottom: solid 1px #eee;
-    padding: 0.4em 1em;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
 
-    h5 {
+    p {
       font-size: 16px;
       margin: 0;
       text-align: center;
     }
   }
 
-  .modal-body,
-  .modal-footer {
-    padding: 0.5em 1em;
+  .modal-body {
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 8px 16px;
+
+    p {
+      font-size: 14px;
+      line-height: 21px;
+    }
   }
 
   .modal-footer {
     text-align: center;
+    height: 134px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     #checkbox_label {
       color: inherit;
+      margin-left: 8px;
 
       &.red {
         color: red;
       }
     }
+
+    .checker {
+      display: flex;
+      align-items: center;
+      margin-top: 0;
+      margin-bottom: 24px;
+    }
+
+    .btn {
+      width: 100px;
+      height: 32px;
+      padding-top: 0;
+      line-height: 32px;
+      text-decoration: none;
+    }
   }
 }
 
-/* The Close Button */
-.close {
-  position: absolute;
-  right: 0.3em;
-  top: 50%;
-  width: 20px;
-  margin: -10px 0 0 0;
-  padding: 1px;
-  height: 20px;
-}
+@media (max-width: 575.98px) {
+  .modal {
+    padding-top: 50px;
+  }
 
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+  .modal-content {
+    width: 340px;
+  }
+
+  .modal-body {
+    height: 340px;
+    overflow-y: auto;
+  }
 }
