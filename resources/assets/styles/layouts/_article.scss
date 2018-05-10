@@ -1,0 +1,53 @@
+.article {
+  .header {
+    height: 63px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+      width: 126px;
+      height: 36px;
+      font-size: 14px;
+      font-weight: normal;
+      padding-top: 0;
+      text-transform: uppercase;
+    }
+  }
+
+  section {
+    &.article-image {
+      height: 211px;
+      background: $color-concrete;
+      background-repeat: no-repeat;
+    }
+
+    &.article-content {
+      margin-top: 3rem;
+
+      .page-header {
+        h1 {
+          font-size: 24px;
+          font-weight: normal;
+        }
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: normal;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      a {
+        color: $color-pacificblue;
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
