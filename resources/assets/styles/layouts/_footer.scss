@@ -12,15 +12,35 @@
 
   .widget_nav_menu {
     h3 {
-      display: none;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      margin-top: 0;
     }
 
-    .menu {
+    #menu-footer-menu {
       display: flex;
       justify-content: space-evenly;
       list-style: none;
       padding: 0;
       font-weight: $font-weight-medium;
+    }
+
+    #menu-second-footer-menu {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+      list-style: none;
+      justify-content: space-between;
+
+      li {
+        width: 30%;
+
+        a {
+          display: block;
+          font-size: $font-size-small;
+          line-height: 2;
+        }
+      }
     }
   }
 
@@ -29,29 +49,5 @@
     color: $color-subtle;
     text-align: center;
     margin: $size3 0;
-  }
-
-  &_sites {
-    ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      columns: 3;
-
-      @media (max-width: $site-max-width) {
-        columns: 2;
-      }
-    }
-
-    strong {
-      display: block;
-      margin-bottom: $size1;
-    }
-
-    a {
-      display: block;
-      font-size: $font-size-small;
-      line-height: 2;
-    }
   }
 }
