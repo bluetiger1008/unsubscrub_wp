@@ -7,7 +7,7 @@
 @section('content')
   <div class="header">
     <a href="{{ home_url('/') }}"><img class="logo" src="@asset('images/logo.svg')"></a>
-    <button class="btn button-primary-bg">Get Started</button>
+    <button class="btn button-primary-bg" id="get_started_3">Get Started</button>
   </div>
   
   <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
@@ -24,4 +24,6 @@
       @include('partials.content-page')
     @endwhile
   </section>
+
+  @include('partials.getstart-modal')
 @endsection
