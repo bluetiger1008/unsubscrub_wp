@@ -1,27 +1,4 @@
 .article {
-  .header {
-    height: 63px;
-    padding: 0 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    img {
-      width: 125px;
-      height: auto;
-    }
-
-    button {
-      width: 126px;
-      height: 36px;
-      font-size: 14px;
-      font-weight: normal;
-      padding-top: 0;
-      text-transform: uppercase;
-      border: none;
-    }
-  }
-
   section {
     &.article-image {
       height: 211px;

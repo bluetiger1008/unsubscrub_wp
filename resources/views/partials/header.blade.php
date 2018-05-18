@@ -1,11 +1,4 @@
-<header class="banner">
-  
-  <div class="container">
-    <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
-    <nav class="nav-primary">
-      @if (has_nav_menu('primary_navigation'))
-        {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']) !!}
-      @endif
-    </nav>
-  </div>
-</header>
+<div class="navbar">
+  <a href="{{ home_url('/') }}"><img class="logo" src="@asset('images/logo.svg')"></a>
+  <button class="btn button-primary-bg" id="get_started_3">Get Started</button>
+</div>
