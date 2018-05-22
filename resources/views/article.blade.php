@@ -5,10 +5,7 @@
 @extends('layouts.app')
 
 @section('content')
-  <div class="header">
-    <a href="{{ home_url('/') }}"><img class="logo" src="@asset('images/logo.svg')"></a>
-    <button class="btn button-primary-bg" id="get_started_3">Get Started</button>
-  </div>
+  @include('partials.header')
   
   <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
   @if ($backgroundImg[0])

@@ -3,6 +3,13 @@
     <h1 class="entry-title">{{ get_the_title() }}</h1>
     @include('partials/entry-meta')
   </header>
+  <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
+  @if ($backgroundImg[0])
+    <section class="article-image" style="background-image: url('{{ $backgroundImg[0] }}')">
+  @else
+    <section class="article-image" style="background-image: url('@asset('images/bg-placeholder.png')')">    
+  @endif
+  </section>
   <div class="entry-content">
     @php(the_content())
   </div>

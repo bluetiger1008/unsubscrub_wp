@@ -5,7 +5,14 @@ export default {
 
     // Get the button that opens the modal
     var btn_continue = document.getElementById("btn_continue");
+    var btn_3 = document.getElementById("get_started_3");
 
+    if(btn_3) {
+      btn_3.onclick = function() {
+          modal.style.display = "block";
+      }
+    }
+  
     // When the user clicks anywhere outside of the modal, close it
     window.onclick = function(event) {
         if (event.target == modal) {
