@@ -17,4 +17,6 @@
 
     {!! get_the_posts_navigation() !!}
   </section>
+
+  @include('partials.getstart-modal')
 @endsection

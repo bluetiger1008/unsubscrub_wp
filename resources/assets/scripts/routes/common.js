@@ -22,7 +22,6 @@ export default {
     }
 
     btn_continue.onclick = function(event) {
-      console.log('continue');
       if(document.getElementById("check_accept").checked) {
         return true;
       } else {
