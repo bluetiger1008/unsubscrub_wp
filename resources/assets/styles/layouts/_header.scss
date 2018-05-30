@@ -40,5 +40,9 @@
     border: none;
     outline: none;
     cursor: pointer;
+
+    &:hover {
+      background-image: linear-gradient(to bottom, #44eaff, #00c3ff);
+    }
   }
 }
