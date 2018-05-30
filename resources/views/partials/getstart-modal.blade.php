@@ -9,8 +9,10 @@
       </div>
       <div class="modal-footer">
         <p class="checker">
-          <input type="checkbox" id="check_accept">
-          <label id="checkbox_label">Yes, I accept</label>
+          <label class="check-container" id="checkbox_label">Yes, I accept
+            <input type="checkbox" checked="checked" id="check_accept">
+            <span class="checkmark"></span>
+          </label>
         </p>
         <a class="btn button-primary-bg continue" id="btn_continue" href="http://go.unsubscrub.com/site/start">Continue</a>
       </div>
